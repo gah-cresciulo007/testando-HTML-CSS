@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre "form"</title>
+</head>
+
+<body>
+
+    <div>
+        <!-- 
+            -form: Tag usada para indicar ao navegador um formulário, a "form" serve para capturar dados de entrada ou informações,
+            informações essas que serão inseridas nos inputs.
+         -->
+        <form action="" method="post" enctype="multipart/form-data">
+            <!-- 
+                -action: Vai definir para onde as informações da "form" vão.
+
+                -method: Vai definir como as informações erão enviadas (Por padrão a form vem como método GET)
+                    -GET: As informações são enviadas ao navegador pela URL, não são informações sigilosas
+                    -POST: São informaçoes sigilosas que não podem ter acesso público, como senhas, numero de cartões e etc..
+             -->
+            <label for="">
+                Endereço:
+                <input type="text" name="address" autocomplete="street-address">
+            </label>
+            <br>
+            <br>
+
+            <label for="">
+                Enviando um arquivo:
+                <input type="file">
+                <!-- 
+                   -multipart/form-data: Para enviar um arquivo em um formulário, é necessário usar essa função
+                   na extenssão "enctype" dentro da tag "form" ***Veja a tag "form"*** 
+                 -->
+            </label>
+            <br>
+            <br>
+
+
+            <!-- 
+                    -name: Para saber quais informações estamos recebendo, é necessário que cada input tenha seu
+                    próprio "name", assim vamos receber o nome do input junto com a informação colocada pelo usuário.
+                 -->
+            <button type="submit">Enviar dados</button>
+            <button type="reset">Limpar tudo</button>
+            <!-- 
+                    button: Para que ás informações sejam enviadas o form, precisa do comando do button, o type
+                    vai definir qual a função do button. (submit: Enviar__reset:Apagar)
+                 -->
+            </label>
+        </form>
+    </div>
+
+    <br>
+    <div>
+        <ul>
+            <h3>Menu</h3>
+            <li><a href="./1-index.html">Tags HTML</a></li>
+            <li><a href="./2-links.html">Links no HTML</a></li>
+            <li><a href="./3-navegando-entre-pastas.html">Navegando entre pastas</a></li>
+            <li><a href="./4-listas.html">Listas no HTML</a></li>
+            <li><a href="./5-elementos-estruturais.html">Elementos estruturais</a></li>
+            <li><a href="./6-imagens.html">Imagens no HTML</a></li>
+            <li><a href="./7-deasafioHTML.html">Desafio usando apenas HTML</a></li>
+            <li><a href="./8-tabelas.html">Tabelas no HTML</a></li>
+            <li><a href="./9-vídeos.html">Vídeos no HTML</a></li>
+            <li><a href="./10-iframe.html">Iframe no HTML</a></li>
+            <li><a href="./11-inputs.html">inputs pt.01 pt.02 pt.03</a></li>
+            <li><a href="./13-desafio-form.html">Faça seu cadástro aqui!</a></li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>

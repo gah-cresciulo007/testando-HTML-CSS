@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando vídeos no HTML</title>
+</head>
+
+<body>
+    <!-- Primeiro metodo:
+    -video: essa tag permite adicionar um video, buscando o video ao navegar entre pastas. -->
+    <video src="../HTML/CSS/Assets/video-test.mp4.mp4" controls controlsList="nodownload" autoplay muted poster="../HTML/assets/wallpaper.jpeg.jfif"></video>
+    <!-- Extensões para tag "video":
+     - src: Extensão de busca para o video.
+     - controls: Adiciona funções basicas ao video, com Play e Pause.
+     - controlsList: ="nodownload" Bloquei que esse video seja baixado.
+     - autoplay: O video reproduz automaticamente assim que a pagina é carregada (alguns navegadores só permitem
+     ess extensão se a função "muted" também estiver ativada na tag "video")
+     - muted: Carrega o video em mudo
+     - poster: Permite colocar uma imagem como capa do video. (O poster só vai aparecer se a função "autoplay" estiver desativada)
+     -->
+    <br>
+
+    <!-- Segundo metodo:
+     - source: Usar a tag "source" dentro da tag "video". A diferença, é que usando a tag "source" podemos usar 
+     varios formatos de video, caso o navegador não consiga ler um formato, ele vai tentar o próximo na sequencia
+     -->
+
+     <video controls poster="../HTML/assets/wallpaper.jpeg.jfif"  height="350px" width="auto">
+        <source src="./assets/video-test.mkv.mkv">
+        <source src="./assets/video-test.mmov.mov">
+        <source src="../HTML/CSS/Assets/video-test.mp4.mp4">
+     </video>
+ 
+     <br>
+    <div>
+        <ul>
+            <h3>Menu</h3>
+            <li><a href="./1-index.html">Tags HTML</a></li>
+            <li><a href="./2-links.html">Links no HTML</a></li>
+            <li><a href="./3-navegando-entre-pastas.html">Navegando entre pastas</a></li>
+            <li><a href="./4-listas.html">Listas no HTML</a></li>
+            <li><a href="./5-elementos-estruturais.html">Elementos estruturais</a></li>
+            <li><a href="./6-imagens.html">Imagens no HTML</a></li>
+            <li><a href="./7-deasafioHTML.html">Desafio usando apenas HTML</a></li>
+            <li><a href="./8-tabelas.html">Tabelas no HTML</a></li>
+            <li><a href="./10-iframe.html">Iframes no HTML</a></li>
+            <li><a href="./11-inputs.html">Inputs pt.01 pt.02 pt.03</a></li>
+            <li><a href="./12-form.html">Formulários no HTML</a></li>
+            <li><a href="./13-desafio-form.html">Faça seu cadástro aqui!</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

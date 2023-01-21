@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de inputs no HTML</title>
+</head>
+
+<body>
+    <h1>Tipos de inputs no HTML</h1>
+    <br>
+    <br>
+
+    <div>
+
+        <!-- -type="text": input para texto (livre) -->
+        <label for="">Input comum para texto
+            <input type="text" autocomplete="name" autofocus placeholder="Digite algo">
+        </label>
+        <br>
+        <br>
+        <!-- 
+            -autocomplete: quando o navegador completa automaticamente a informação do input.
+                É necessario identificar o que será completado dentro das "aspas" (Valores identificados no Stack Overflow)
+            
+            - autofocus: usado apenas em um input da pagina, essa extensão foca no input selecionado assim que a pagina carrega   
+            -->
+        <label for="">Esse é um input "disable", ou, desabilitado:
+            <input type="text" disabled value="Input 'disabled">
+        </label>
+        <br>
+        <br>
+        <!-- 
+            - disable: desabilita o input (value: permite que uma mensagem fique dentro do input desabilitado)
+         -->
+        <label for="">Input "readonly" apenas para leitura:
+            <input type="text" readonly value="Gabriel Cresciulo">
+        </label>
+        <br>
+        <br>
+
+        <!-- 
+            - readonly: não desabilita o input, porém só permite leitura sem digitar texto
+                (value: para digitar os texto que ficará em evidencia) -->
+        <!-- 
+            - placeholder: texto informativo dentro do input, sobre qual informação digitar ali. 
+            (o texto desaparece quando começa a digitar)
+         -->
+    </div>
+
+    <div>
+        <h2>Relacionando o "input" a uma "label"</h2>
+        <br>
+        <br>
+        <!-- Duas formas de relacionar um "input" a uma "label" -->
+
+        <!-- Método 01: Inserindo o input dentro da chave label-->
+        <label for="">
+            Rua:
+            <input type="text" autocomplete="street-address" placeholder="Endereço">
+        </label>
+        <br>
+        <br>
+        <!-- Método 02: Colocando a mesma descriição no "for" e no "idz" -->
+        <label for="rua">Rua</label>
+        <input type="text" autocomplete="street-address" id="rua" placeholder="Endereço">
+    </div>
+    <br>
+    <br>
+
+    <h2>Inputs Pt.02</h2>
+    <br>
+    <br>
+    <div>
+        <!-- -type="color": Permite navegar em uma paleta de cores em RGB ou Hexadecimal-->
+        <label for=""> Navegar pela paleta de cores:
+            <input type="color">
+        </label>
+        <br>
+        <br>
+
+        <!-- -type="range": Barra que permite selecionar valores -->
+        <label for="range-values">A "range" permite selecionar valores programados:</label>
+        <input type="range" min="0" max="100" value="50" id="range-values">
+        <br>
+        <br>
+        <!--
+            -"min": Valor minimo da barra 
+            -"max": Valor máximo da barra
+            -"value": Valor inicial da barra -->
+    </div>
+
+    <br>
+    <h2>Inputs Pt.03</h2>
+    <br>
+    <br>
+    <div>
+
+        <!-- 
+            -type="password": Input usado para digitar senhas.
+         -->
+        <label for=""> Input para senha:
+            <input type="password" placeholder="Sua senha aqui">
+        </label>
+        <br>
+        <br>
+        <!-- 
+            -type="email": Inputs para endereço de e-mail, apenas endereços de e-mail são validados
+          -->
+        <label for="">Apenas para endereços de e-mail:
+            <input type="email" placeholder="Digite seu e-mail" autocomplete="email">
+        </label>
+        <br>
+        <br>
+    </div>
+
+
+    <div>
+        <!-- 
+            -type="checkbox": Input que permite selecionar opções
+           -->
+
+        <h3>Qual tipo de queijo?</h3>
+
+        <input type="checkbox" id="mussarela">
+        <label for="mussarela">
+            Mussarela
+        </label>
+
+
+        <input type="checkbox" id="cheddar">
+        <label for="cheddar">
+            Cheddar
+        </label>
+
+        <input type="checkbox" id="provolone">
+        <label for="provolone">
+            Provolone
+        </label>
+
+        <input type="checkbox" id="cremily">
+        <label for="cremily">
+            Cremily
+        </label>
+        <br>
+        <h4>**"checkbox" permite selecionar opções**</h4>
+        <br>
+        <br>
+    </div>
+
+    <div>
+        <label for="">
+            Input para carregar arquivos na pag:
+            <input type="file" multiple accept=".png">
+            <!-- 
+                -multiple: Permite selecionar vários arquivos para carregar.
+                -accept= Permite definir qual o formato de arquivo que poderá ser selecionado (Ex. accept=".png"
+                apenas imagens em formato "png")
+                ***accept também permite selecionar um tipo de arquivo, em vários formatos, naõ apenas um.
+                 Ao invés de selecionar o formato usando o método anterior, podemos selcionar o arquivo
+                 e depois permitir todos os formatos*** (Ex. accept="image/*")
+             -->
+        </label>
+        <br>
+        <br>
+
+        <label for="">
+            Apenas números aqui:
+            <input type="number" placeholder="Sua idade aqui">
+            <!-- 
+                -type="number": Permite que apenas números sejam digitados no input
+             -->
+        </label>
+        <br>
+        <br>
+
+        <label for="">
+            Sua data de nascimento aqui:
+            <input type="date">
+            <!-- 
+                -type="date": Permite apenas datas. 
+             -->
+        </label>
+        <br>
+        <br>
+
+        <label for="">
+            Apenas números de telefone aqui:
+            <input type="tel" placeholder="Seu celular aqui" autocomplete="tel">
+            <!-- 
+                -type="tel": Permite que apenas números de telefone sejam digitados no input
+             -->
+        </label>
+        <br>
+        <br>
+
+        <label for="">
+            Apenas endereços de URL aqui:
+            <input type="url" placeholder="Link do seu site aqui">
+            <!-- 
+                -type="url": Permite que apenas url´s sejam digitados no input. (Ex. www.google.com)
+             -->
+        </label>
+        <br>
+        <br>
+
+        <label for="">
+            Qual o seu sexo?
+            <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="sexo">
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="sexo">
+            <!-- 
+                -type="radio": Permite selecionar opções progranadas; para permitir a escolha de apena s uma opção
+                é necessário que todos os inputs tenham o mesmo "name"
+             -->
+        </label>
+        <br>
+        <br>
+
+
+    </div>
+
+
+    <br>
+    <div>
+        <ul>
+            <h3>Menu</h3>
+            <li><a href="./1-index.html">Tags HTML</a></li>
+            <li><a href="./2-links.html">Links no HTML</a></li>
+            <li><a href="./3-navegando-entre-pastas.html">Navegando entre pastas</a></li>
+            <li><a href="./4-listas.html">Listas no HTML</a></li>
+            <li><a href="./5-elementos-estruturais.html">Elementos estruturais</a></li>
+            <li><a href="./6-imagens.html">Imagens no HTML</a></li>
+            <li><a href="./7-deasafioHTML.html">Desafio usando apenas HTML</a></li>
+            <li><a href="./8-tabelas.html">Tabelas no HTML</a></li>
+            <li><a href="./9-vídeos.html">Vídeos no HTML</a></li>
+            <li><a href="./10-iframe.html">Iframe no HTML</a></li>
+            <li><a href="./12-form.html">Formulários no HTML</a></li>
+            <li><a href="./13-desafio-form.html">Faça seu cadástro aqui!</a></li>
+
+
+        </ul>
+    </div>
+</body>
+
+</html>
+
+
+

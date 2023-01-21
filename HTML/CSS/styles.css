@@ -1,0 +1,40 @@
+
+/* 
+Tipo 01: selecionar e elemento que vai ser estilizado, usando a tag. (Usanso esse seletor, todas as tags iguais
+da página terão o mesmo style)
+Ex.: */
+
+h1 {
+    color: #3605;
+}
+
+/* 
+Tipo 02: slecionar o elementos pelo id, o id diferente da class que pode ser usado por varias tags, pode pertencare a apenas uma tag
+como se aqule id fosse o RG da tag, único. Para chamar o "id" usamos # 
+Ex.: (para o exemplo, vamos usar a primeira "div" dá página 'index.html'*/
+#id-seletor {
+    background-color: #333;
+}
+
+/* 
+Tipo 03: esse é o método mais utilizado, quando selecionamos o elemento pela "class", a mesma class pode ser usada
+por diferentes tag's. Para chamar a "class" no css usamos . (ponto final)
+Ex.: para esse exemplo vamos usar as tgs "h2" e "h3" na página 'index.html'*/
+.class-seletor {
+    color: #ff52a3;
+}
+/* Outra diferencial da seleção pela "class" é que podemos chamar mais de uma "class" no mesmo style css
+Ex.: (para esse exemplo, vamos usar a "class" usada acima nas tag's "h2" e "h3" e adicionaremos "h4" e "h5"
+com uma "class" diferente. Obs.: Sempre usar uma vírgula entre elas) */
+.class-seletor, .secondclass-seletor {
+    background-color: #198ae6;
+}
+
+/*  Outro seletor é o * (asterisco), na programação, muitas das vezes o * indica -tudo- na página, assim
+quando usamos esse seletor, quer dizer que todas as estilizações vão para a página toda
+Ex.: */
+* {
+    text-align: center;
+}
+
+

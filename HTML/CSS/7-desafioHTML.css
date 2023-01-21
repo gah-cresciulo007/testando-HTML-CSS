@@ -1,0 +1,105 @@
+* {
+    font-family: 'Barlow', sans-serif; /* <!-- Para escolher o estilo do texto (Google Fonts) --> */
+    background-color: #1C1C1C;
+    box-sizing: border-box; /* <!-- como padrão o navegador vem como "content-box", essa
+    função faz os elementos crescerem ao definir suas medidas, como padding e margin. Por
+    outro lado a função "border-box" ao invés de somar medidas, tira do próprio elemento, as 
+    medidas definidas, no final do projetos as medidas serão as que foram definidas e não somadas aos elementos -->*/
+
+    text-align: center; /* <!-- Alinhamento dos textos na página -->*/
+}
+/* <!-- -->*/
+h1 {
+    color: #ADFF2F; /* <!--Para escolher a cor das letras -->*/
+    font-weight: bold; /* <!-- Para selecionar a grossura das letras, "bold" busca as letras mais fortes do "font-family" -->*/
+    font-style: normal; /* <!--Para escolher o estilo letras -->*/
+    font-size: 7.5vh; /* <!-- Para definir o tamanho das -->*/
+}
+
+h2, h3, figcaption {
+    color: #ADFF2F;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 5.5vh;
+}
+
+li {
+    line-height: 4vh; /* <!-- Para definir o espaço entre as linhas -->*/
+    letter-spacing: normal; /* <!-- Para definir o espaço entre as letras -->*/
+    word-spacing: normal; /* <!-- Para definir o espaço entre as palavras -->*/
+    color: #7B68EE;
+    font-weight: 100;
+    text-decoration: none; /* <!-- Permite usar alguns detalhes no texto -->*/
+    text-transform: uppercase; /* <!-- Colocar as letras em caixa alta ou baixa -->*/
+    margin: 0vw 40vw;
+}
+ 
+p {
+    color: #7B68EE;
+    margin: 0vw 10vw; /* <!-- -margin: Espaçamento interno dos eslementos. 
+    - margin-top: aplica apenas na parte de cima elemento
+    - margin-buttom: aplica apenas na parte de baixo do elemento
+    - margin-right: aplica apenas na parte "direita" do elemento 
+    - margin-left: aplica apenas na parte esquerda do elemento
+    
+    Método 2:
+     margin: 10px 10px 10px 10px; 
+        top    right   buttom  left
+        
+    Método 3:
+    margin: 10px 10px
+    top/buttom      right/left-->*/
+              
+}
+
+.social-network {
+    padding: 0 3vw; /* <!-- -padding: Espaçamento interno dos eslementos. 
+    - padding-top: aplica apenas na parte de cima elemento
+    - padding-buttom: aplica apenas na parte de baixo do elemento
+    - padding-right: aplica apenas na parte "direita" do elemento 
+    - padding-left: aplica apenas na parte esquerda do elemento
+    
+    Método 2:
+     padding: 10px 10px 10px 10px; 
+        top    right   buttom  left
+        
+    Método 3:
+    padding: 10px 10px
+    top/buttom      right/left-->*/
+}
+
+a {
+    color: 	#7CFC00;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+.link-menu {
+    text-transform: none;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+
+
+button {
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7vh;
+}
+
+
+ button:hover {
+    background-color: #8470FF;
+ }
+
+
+
